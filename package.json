@@ -1,0 +1,45 @@
+{
+  "name": "session-helper",
+  "version": "1.0.0",
+  "description": "Session helper is a module that helps you save an expiry time to your local/session storage, be able to performs checks against it, and perform callbacks when this expiry time has been reached.",
+  "main": "dist/sessionhelper.js",
+  "author": "Matthias Debaere (https://github.com/matthiasdebaere)",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthiasDebaere/Session-Helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MatthiasDebaere/Session-Helper/issues"
+  },
+  "homepage": "https://github.com/MatthiasDebaere/Session-Helper#readme",
+  "keywords": [
+    "session helper",
+    "session management",
+    "expiry",
+    "timeout",
+    "localstorage",
+    "sessionstorage"
+  ],
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.4.0",
+    "coveralls": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.11.0",
+    "jest": "^22.4.3",
+    "prettier": "^1.12.1"
+  },
+  "scripts": {
+    "start": "babel src -D -d dist --watch",
+    "build": "babel src -D -d dist",
+    "prepare": "npm run build",
+    "test": "jest",
+    "coverage": "jest --coverage",
+    "coveralls": "jest --coverage && cat ./test/coverage/lcov.info | coveralls",
+    "lint": "eslint src test --ignore-pattern test/coverage*"
+  }
+}
