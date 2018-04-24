@@ -87,7 +87,7 @@ export default class SessionHelper {
 
   /* expiry timeout */
   get expiryTimeout() {
-    if (typeof this._expiryTimeoutCallback === 'function') {
+    if (typeof this.expiryTimeoutCallback === 'function' && this._expiryTimeout !== null) {
       // return the remaining time until timer has finished
       const now = Math.round(new Date().getTime() / 1000.0)
       const expiryTimestamp = this.expiry
@@ -101,9 +101,6 @@ export default class SessionHelper {
       console.log('[SessionHelper] Token expiry timeout function is not set.')
     }
     return null
-  }
-  set expiryTimeout(timeout) {
-    this._expiryTimeout = timeout
   }
 
   /* expiry timeout callback */
@@ -119,7 +116,7 @@ export default class SessionHelper {
     const that = this
     this._expiryTimeout = setTimeout(() => {
       that.expiryTimeoutCallback()
-    }, (this._timeoutInMinutes * 60 * 1000) + 1000) // add 1000 miliseconds to counter rounding errors
+    }, (this._timeoutInMinutes * 60 * 1000) + 1000) // add 1 second to counter rounding errors
     if (this._debugMode) { // eslint-disable-next-line no-console
       console.log(`[SessionHelper] Token expiry timeout function will be triggered in roughly ${Math.round(this._timeoutInMinutes)} minute(s) at ${new Date(this.expiry * 1000)}.`)
     }
