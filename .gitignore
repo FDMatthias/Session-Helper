@@ -1,0 +1,24 @@
+
+# Logs
+logs
+*.log
+npm-debug.log
+
+# Coverage directory
+coverage
+.nyc_output
+.coveralls.yml
+
+# Dependency directories
+node_modules
+
+# dotenv environment variables file
+.env
+
+# Dist folder
+dist
+
+# Misc
+.vscode
+.DS_Store
+.idea
