@@ -2,8 +2,8 @@
   "name": "session-helper",
   "version": "1.0.0",
   "description": "Session helper is a module that helps you save an expiry time to your local/session storage, be able to performs checks against it, and perform callbacks when this expiry time has been reached.",
-  "main": "dist/sessionhelper.js",
-  "author": "Matthias Debaere (https://github.com/matthiasdebaere)",
+  "main": "dist/SessionHelper.js",
+  "author": "Matthias Debaere (https://github.com/MatthiasDebaere)",
   "license": "MIT",
   "repository": {
     "type": "git",
