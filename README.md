@@ -2,6 +2,8 @@
 
 Session Helper is a module that helps you save a timestamp as an 'expiry time' to your local/session storage to be able to perform checks against it and to trigger callbacks when this expiry time has been reached.
 
+[![npm version](https://badge.fury.io/js/session-helper.svg)](https://badge.fury.io/js/session-helper)
+
 ## Usage
 
 ### 0) Install
@@ -95,7 +97,7 @@ Function to stop the timeout function:
 
 #### resetExpiryTimeout
 
-Function to restart the timeout function, using the timeoutInMinutes configuration parameter. Underlying it's simply calling _.stopExpiryTimeout_ and _.startExpiryTimeout_:
+Function to restart the timeout function, using the timeoutInMinutes configuration parameter. Internally it's simply calling _.stopExpiryTimeout_ and _.startExpiryTimeout_:
   `SessionHelper.resetExpiryTimeout()`
 
 ## TODO
