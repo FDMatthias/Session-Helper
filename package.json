@@ -3,16 +3,16 @@
   "version": "1.0.5",
   "description": "Session helper is a module that helps you save an expiry time to your local/session storage, be able to performs checks against it, and perform callbacks when this expiry time has been reached.",
   "main": "dist/SessionHelper.js",
-  "author": "Cause Of Dev (https://github.com/CauseOfDev)",
+  "author": "FDMatthias (https://github.com/FDMatthias)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CauseOfDev/Session-Helper.git"
+    "url": "git+https://github.com/FDMatthias/Session-Helper.git"
   },
   "bugs": {
-    "url": "https://github.com/CauseOfDev/Session-Helper/issues"
+    "url": "https://github.com/FDMatthias/Session-Helper/issues"
   },
-  "homepage": "https://github.com/CauseOfDev/Session-Helper#readme",
+  "homepage": "https://github.com/FDMatthias/Session-Helper#readme",
   "keywords": [
     "session helper",
     "session management",
