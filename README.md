@@ -1,4 +1,5 @@
 # Session-Helper
+> **Important note**: this library is not actively maintained and may be removed in time, use at your own risk.
 
 Session Helper is a module that helps you save a timestamp as an 'expiry time' to your local/session storage to be able to perform checks against it and to trigger callbacks when this expiry time has been reached.
 
